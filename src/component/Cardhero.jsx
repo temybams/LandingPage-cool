@@ -1,9 +1,9 @@
 const Cardhero = () => {
   return (
-    <div className='w-full h-full flex items-center justify-center text-black'>
-      <div className='card_container rounded-xl flex-col py-4 px-10 flex justify-center items-center w-full'>
-        <div className='card_container-tab w-fit rounded-md h-10 max-h-10  bg-gray-200/90 text-black flex item-center justify-center'>
-          <button className=' bg-green-200 font-semibold text-sm rounded-md capitalize px-5 py-2'>
+    <div className='w-full h-full flex items-center justify-center text-black mt-7 '>
+      <div className='card_container rounded-xl flex-col py-4 px-10  flex justify-center items-center w-full'>
+        <div className='card_container-tab w-fit rounded-md h-10 max-h-10  bg-gray-200/90 text-black flex item-center justify-center pt-12'>
+          <button className=' bg-green-200 font-semibold text-sm rounded-md capitalize px-5 py-4'>
             it & Developent
           </button>
           <button className='text-sm capitalize px-5 py-2'>it & Developent</button>

@@ -14,10 +14,15 @@ import Card6 from "../imgs/Group 626552.png";
 import Num1 from "../imgs/1.png";
 import Num2 from "../imgs/2.png";
 import Num3 from "../imgs/3.png";
+import Iconbtnn from "../imgs/Frame 626653.png";
+import Iconbtnn2 from "../imgs/Frame 626624.png";
 import Iconbtn from "../imgs/Vector.png";
+
 import Iconbtn2 from "../imgs/Vector (9).png";
 import Icon from "../imgs/Vector (15).png";
+import Iconn from "../imgs/Frame 626623.png";
 import Groove from "../imgs/Frame 626655.png";
+import Group from '../imgs/Groupp.png'
 import Cardhero from "../component/Cardhero";
 import Pic1 from "../imgs/pexels-christina-morillo-1181424-removebg-preview 1.png";
 import Pic2 from "../imgs/pexels-puwadon-sangngern-13419240-removebg-preview 1.png";
@@ -139,9 +144,9 @@ const Layout = () => {
         <div className='nav p-4'>
           <Nav />
         </div>
-        <div className='hero_content flex items-center justify-center'>
-          <div className='hero_text flex items-center justify-center flex-col text-4xl w-[50%]'>
-            <h1 className=' font-bold text-5xl  flex items-center text-center justify-center text-black'>
+        <div className='hero_content flex items-center justify-center  w-96'>
+          <div className='hero_text flex items-center justify-center flex-col text-4xl w-[50%] px-9'>
+            <h1 className=' font-bold text-5xl  flex items-center text-center justify-center text-black '>
               Finding the right fit
               <div className='hero_person_img bg-green flex items-center justify-center w-20 h-20 rounded-full'>
                 <img src={Avatar} alt='' />
@@ -154,18 +159,18 @@ const Layout = () => {
             </h1>
 
             <div className='small mt-6 text-black/80'>
-              <p className='text-xl text-center'>
+              <p className='text-xl text-center  mt-6 '>
                 with our rigorous pre-vetting process, you&apos;ll never have to <br /> worry about
                 finding the ideal candidate ever again
               </p>
             </div>
           </div>
         </div>
-        <div className='hero_content_input flex justify-center bg-white'>
-          <div className='input relative flex items-center rounded-xl'>
+        <div className='hero_content_input flex justify-center bg-white mt-6 '>
+          <div className='input relative flex items-center rounded-xl '>
             <input
               type='text'
-              className='w-full bg-white text-gray-800 border outline-none rounded-xl px-2 py-6'
+              className='w-full bg-white text-gray-800 border outline-none rounded-xl  py-6'
               placeholder='Design'
             />
             <button className=' bg-yellow-500 absolute rounded-xl flex items-center justify-center top-0 right-0 bottom-0 outline-none min-h-full w-20'>
@@ -178,7 +183,7 @@ const Layout = () => {
         </div>
       </section>
 
-      <div className='art_img'>
+      <div className='art_img mt-20'>
         <div className='rectangle'></div>
         <div className='rectangle'></div>
         <div className='rectangle'></div>
@@ -195,7 +200,7 @@ const Layout = () => {
           <div className='one_step-bottom text-black gap-10 flex px-20 pb-20 flex-col justify-center'>
             <div className='flex flex-wrap gap-5 items-center justify-center'>
               <div className='article w-96 flex flex-col gap-4'>
-                <div className='text-2xl font-semibold capitalize'>
+                <div className='text-2xl font-semibold '>
                   Find Dev and IT professionals to scale your business.
                 </div>
                 <div className='icon_x_text grid grid-cols-2 gap-4'>
@@ -213,8 +218,8 @@ const Layout = () => {
                   </div>
                 </div>
               </div>
-              <div className='right-box min-w-96 flex items-center justify-end '>
-                <div className='box mx-20 bg-white max-w-[700px] min-w-80 p-4 rounded-xl w-full'>
+              <div className='right-box min-w-96 flex flex-col items-center justify-end  '>
+                <div className='box mx-20 bg-white max-w-[700px] min-w-80 p-4  rounded-2xl w-full'>
                   <p className=' text-lg'>It & Development</p>
                   <div className='item flex flex-wrap gap-4 mt-2 p-2'>
                     {items1.map((item) => (
@@ -225,7 +230,7 @@ const Layout = () => {
                         <div className='img_cont flex items-center justify-center w-20 h-20 bg-gray-200 rounded-full'>
                           <img src={item.image} alt='' />
                         </div>
-                        <div className='article w-[70px] text-center capitalize text-center'>
+                        <div className='article w-[70px] font-semibold capitalize text-center'>
                           {item.name}
                         </div>
                       </div>
@@ -237,10 +242,10 @@ const Layout = () => {
                 </div>
               </div>
             </div>
-            <div className='flex flex-wrap gap-5 items-center justify-center'>
+            <div className='flex flex-wrap gap-8 items-center  justify-center'>
               <div className='article w-96  flex flex-col gap-4'>
-                <div className='text-2xl font-semibold capitalize'>
-                  Explore creative individuals with a Keen eye for details
+                <div className='text-2xl font-semibold '>
+                  Explore Creative individuals with a Keen eye for details
                 </div>
                 <div className='icon_x_text grid grid-cols-2 gap-4'>
                   <div className='flex text-sm items-center gap-2'>
@@ -257,8 +262,8 @@ const Layout = () => {
                   </div>
                 </div>
               </div>
-              <div className='right-box flex items-center justify-end '>
-                <div className='box mx-20 bg-white max-w-[700px] min-w-80  p-4 rounded-xl w-full'>
+              <div className='right-box flex flex-col items-center justify-end  '>
+                <div className='box mx-20 bg-white max-w-[700px] min-w-80 p-4  rounded-2xl w-full '>
                   <p className=' text-lg'>Design & Creative</p>
                   <div className='item flex flex-wrap gap-4 mt-2 p-2'>
                     <button className='item-button rotate-180 w-[70px] ml-5 h-[70px] flex items-center justify-center rounded-2xl bg-gray-200'>
@@ -272,7 +277,7 @@ const Layout = () => {
                         <div className='img_cont flex items-center justify-center w-20 h-20 bg-gray-200 rounded-full'>
                           <img src={item.image} alt='' />
                         </div>
-                        <div className='article w-[70px] text-center capitalize text-center'>
+                        <div className='article w-[70px] font-semibold capitalize text-center'>
                           {item.name}
                         </div>
                       </div>
@@ -280,6 +285,7 @@ const Layout = () => {
                   </div>
                 </div>
               </div>
+
             </div>
             <div className='flex flex-wrap items-center'>
               <div className='article w-96 flex items-center gap-4'>
@@ -300,8 +306,8 @@ const Layout = () => {
 
       <section>
         <div className='howit_worked p-20  flex flex-row flex-wrap'>
-          <div className='left flex-1 text-white p-20 flex flex-col gap-5'>
-            <h1 className=' text-white font-bold gap-4 text-5xl  flex flex-col items-start justify-start text-left'>
+          <div className='left flex-1 text-white h-48 flex flex-col gap-5'>
+            <h1 className=' text-white font-bold gap-4 text-6xl h-48 flex flex-col items-start justify-start text-left'>
               How it worked
               <div className='flex flex-row'>
                 for jason
@@ -310,20 +316,20 @@ const Layout = () => {
                 </div>
                 at
               </div>
-              <div className='hero_person_img flex items-center justify-center w-14 h-14 rounded-full'>
-                <img src='' alt='groove' />
+              <div >
+                <img src={Group} alt='groove' />
               </div>
             </h1>
-            <p className=' w-80 text-left text-gray-200'>
-              Zwilt enabled us to deliver on time and they&apos;ve been heavy hitters in out corner
+            <p className=' w-100 text-left text-2xl h-16 font-normal mt-10 text-gray-200'>
+              Zwilt enabled us to deliver on time and they've <br /> been heavy hitters in out corner
               since.
             </p>
             <div className='actions flex gap-2'>
-              <button className='item-button rotate-180 w-[30px]  h-[30px] flex items-center justify-center rounded-lg bg-white'>
-                <img src={Iconbtn} alt='' />
+              <button >
+                <img src={Iconbtnn} alt='' />
               </button>
-              <button className='item-button w-[30px] h-[30px] flex items-center justify-center rounded-lg bg-white'>
-                <img src={Iconbtn} alt='' />
+              <button >
+                <img src={Iconbtnn2} alt='' />
               </button>
             </div>
           </div>
@@ -334,13 +340,13 @@ const Layout = () => {
                   <img src={Groove} alt='groove' />
                 </div>
                 <div className='title'>
-                  <h2 className='text-3xl font-bold text-white'>Jason Makki</h2>
-                  <p className='text-gray-500 text-sm'>Enineer at GROOVE</p>
-                  <p className='text-gray-500 text-sm'>san Francisco</p>
+                  <h2 className=' font-bold text-4xl text-white'>Jason Makki</h2>
+                  <p className='text-gray-500 font-medium text-base'>Engineer at GROOVE</p>
+                  <p className='text-gray-500 font-medium text-base'>San Francisco</p>
                 </div>
               </div>
 
-              <div className='content w-96'>
+              <div className='content w-[460px] font-normal text-xl mt-10'>
                 Zwilt enabled us to deliver on time and they've been heavy hitters in our corner
                 since. Zwilt enabled us to deliver on time and they've been heavy hitters in our
                 corner since.Zwilt enabled us to deliver on time and they've been heavy hitters.
@@ -353,40 +359,40 @@ const Layout = () => {
       <section>
         <div className='good_h flex p-20 m-20'>
           <div className='left flex flex-col gap-4 flex-1'>
-            <h1 className=' font-bold text-5xl w-[460px]  flex items-center text-left justify-center text-black'>
-              How we ensure you&apos;re in good hands
+            <h1 className=' font-bold text-5xl w-[570px] leading-10 flex items-center text-left justify-center text-black'>
+              How we ensure you&apos;re in good hands.
             </h1>
-            <p className='w-[460px] text-lg text-black'>
+            <p className='w-[646px] text-gray-500 font-normal  text-xl '>
               With our comprehensive screening process, we hand-pick highly skilled candidates so
               you can onboard them in a matter of days.
             </p>
 
             <div className='box flex flex-col gap-1'>
-              <div className='top text-black flex items-center gap-3 w-[400px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
+              <div className='top text-black flex items-center gap-3 w-[635px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
                 <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full'>
                   <img src={Icon} alt='' className='w-[10%]' />
                 </div>
-                <p className='text-sm'>
+                <p className='text-sm py-4'>
                   <span className='font-bold'>Step 1:</span> Resume Screening
                 </p>
               </div>
-              <div className='bottom text-black shadow-md flex flex-col justify-center gap-3 w-[400px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
+              <div className='bottom text-black shadow-md flex flex-col justify-center gap-3 w-[635px] py-6 px-4 rounded-md border-gray-100 border-[1px]'>
                 <div className='top flex items-center  gap-3'>
-                  <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidden bg-blue-600/70 rounded-full'>
-                    <img src={Icon} alt='' className='w-[10%]' />
+                  <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidde rounded-full'>
+                    <img src={Iconn} alt='' className='w-[10%]' />
                   </div>
                   <p className='text-sm'>
-                    <span className='font-bold'>Step 1:</span> Video Interview
+                    <span className='font-bold'>Step 2:</span> Video Interview
                   </p>
                 </div>
                 <div className='bottom'>
-                  <p className='text-sm text-black'>
+                  <p className=' text-gray-500 font-normal text-base'>
                     Candidates are assessed through skill based questions in a virtual setting.
                     Allowing you to gauge personality and cultural fit.
                   </p>
                 </div>
               </div>
-              <div className='top text-black flex items-center gap-3 w-[400px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
+              <div className='top text-black flex items-center gap-3 w-[635px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
                 <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full'>
                   <img src={Icon} alt='' className='w-[10%]' />
                 </div>
@@ -394,7 +400,7 @@ const Layout = () => {
                   <span className='font-bold'>Step 3:</span> Technical Evaluation
                 </p>
               </div>
-              <div className='top text-black flex items-center gap-3 w-[400px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
+              <div className='top text-black flex items-center gap-3 w-[635px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
                 <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full'>
                   <img src={Icon} alt='' className='w-[10%]' />
                 </div>
@@ -402,7 +408,7 @@ const Layout = () => {
                   <span className='font-bold'>Step 1:</span> Application Evaluation
                 </p>
               </div>
-              <div className='top text-black flex items-center gap-3 w-[400px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
+              <div className='top text-black flex items-center gap-3 w-[635px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
                 <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full'>
                   <img src={Icon} alt='' className='w-[10%]' />
                 </div>
