@@ -1,9 +1,9 @@
-import LayoutPage from "./layout/Layout";
+import Layout  from './layout/Layout';
 
 const App = () => {
   return (
     <>
-      <LayoutPage />
+      <Layout />
     </>
   );
 };
