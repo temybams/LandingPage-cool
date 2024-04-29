@@ -37,7 +37,7 @@ import Pic8 from "../imgs/image 250.png";
 import Pic9 from "../imgs/image 251.png";
 import Pic10 from "../imgs/image 247.png";
 import FooterPage from "../component/Footer";
-const Layout = () => {
+const LayoutPage = () => {
   const items1 = [
     {
       name: "shopify developer",
@@ -627,7 +627,7 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default LayoutPage;
 
 
 
