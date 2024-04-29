@@ -1,4 +1,5 @@
-import Nav from "../component/nav";
+import Nav from "../component/Nav";
+import Carousel from "../component/Carousel";
 import Companylogo from "../imgs/Group 626553.png";
 import Avatar from "../imgs/zwilt-tba-1-01 2.png";
 import Avatar1 from "../imgs/image 6.png";
@@ -35,6 +36,7 @@ import Pic7 from "../imgs/image 249.png";
 import Pic8 from "../imgs/image 250.png";
 import Pic9 from "../imgs/image 251.png";
 import Pic10 from "../imgs/image 247.png";
+import FooterPage from "../component/Footer";
 const Layout = () => {
   const items1 = [
     {
@@ -357,9 +359,9 @@ const Layout = () => {
       </section>
 
       <section>
-        <div className='good_h flex p-20 m-20'>
+        <div className=' flex p-20 gap-20'>
           <div className='left flex flex-col gap-4 flex-1'>
-            <h1 className=' font-bold text-5xl w-[570px] leading-10 flex items-center text-left justify-center text-black'>
+            <h1 className=' font-bold text-6xl w-[570px] leading-10 flex items-center text-left justify-center text-black'>
               How we ensure you&apos;re in good hands.
             </h1>
             <p className='w-[646px] text-gray-500 font-normal  text-xl '>
@@ -396,24 +398,24 @@ const Layout = () => {
                 <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full'>
                   <img src={Icon} alt='' className='w-[10%]' />
                 </div>
-                <p className='text-sm'>
-                  <span className='font-bold'>Step 3:</span> Technical Evaluation
+                <p className='text-sm h-5 py-6 '>
+                  <span className='font-bold text-base'>Step 3:</span> Technical Evaluation
                 </p>
               </div>
               <div className='top text-black flex items-center gap-3 w-[635px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
                 <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full'>
                   <img src={Icon} alt='' className='w-[10%]' />
                 </div>
-                <p className='text-sm'>
-                  <span className='font-bold'>Step 1:</span> Application Evaluation
+                <p className='text-sm h-5 py-6'>
+                  <span className='font-bold text-base'>Step 1:</span> Application Evaluation
                 </p>
               </div>
               <div className='top text-black flex items-center gap-3 w-[635px] py-2 px-4 rounded-md border-gray-100 border-[1px]'>
                 <div className='img_cont flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full'>
                   <img src={Icon} alt='' className='w-[10%]' />
                 </div>
-                <p className='text-sm'>
-                  <span className='font-bold'>Step 1:</span> Lets get to work
+                <p className='text-sm h-5 py-6'>
+                  <span className='font-bold text-base'>Step 1:</span> Lets get to work
                 </p>
               </div>
             </div>
@@ -500,7 +502,7 @@ const Layout = () => {
               world&apos;s highly qualified talent pool.
             </p>
           </div>
-          <div className='right box_constrain shadow-lg '>
+          {/* <div className='right box_constrain shadow-lg '>
             <div className='flex  gap-4 '>
               {items4.map((item) => (
                 <div
@@ -549,71 +551,70 @@ const Layout = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+          <Carousel/>
         </div>
       </section>
 
-
-
       <section>
         <div className='faq_cont text-black mx-20 py-40' style={{ backgroundColor: "#f9f9f9" }}>
-          <div className='header text-5xl font-bold text-center '>Frequently asked questions</div>
+          <div className='header text-6xl font-bold text-center '>Frequently asked questions</div>
           <div className='questions_cont mt-20 flex flex-col mb-40'>
             <div className='flex rect border-t-2 border-b-2 border-gray-300/50 w-full h-24 '>
-              <div className='box w-48 border-gray-300 border-r-2 flex items-center justify-center'>
+              <div className='box w-48 text-lg border-gray-300 border-r-2 flex items-center justify-center'>
                 General
               </div>
               <div className='box w-48 flex items-center justify-center'></div>
-              <div className='box flex items-center px-20 justify-center'>
+              <div className='box flex items-center text-lg px-20 justify-center'>
                 I want to work part-time, is that possible
               </div>
             </div>
             <div className='flex rect  border-b-2 border-gray-300/50 w-full h-24 '>
               <div className='box w-48 flex items-center justify-center'></div>
               <div className='box w-48 flex items-center justify-center'></div>
-              <div className='box flex items-center px-20 justify-center'>
+              <div className='box flex items-center text-lg px-20 justify-center'>
                 How long are the average projects?
               </div>
             </div>
             <div className='flex rect  border-b-2 bg-gray-300/50 w-full h-24 '>
               <div className='box w-48 flex items-center justify-center'></div>
               <div className='box w-48 flex items-center justify-center'></div>
-              <div className='box flex items-center px-20 justify-center'>
+              <div className='box flex items-center text-lg px-20 justify-center'>
                 How does the payment works?
               </div>
             </div>
             <div className='flex rect   w-full h-24 '>
               <div className='box w-48 flex items-center justify-center'></div>
               <div className='box w-48 flex items-center justify-center'></div>
-              <div className='box flex items-center px-20 justify-center'>How much can I earn?</div>
+              <div className='box flex items-center text-lg px-20 justify-center'>How much can I earn?</div>
             </div>
             <div className='flex rect border-t-2 border-b-2 border-gray-300/50 w-full h-24 '>
-              <div className='box w-48 border-gray-300 border-r-2 flex items-center justify-center'>
+              <div className='box w-48 border-gray-300 text-lg  border-r-2 flex items-center justify-center'>
                 General
               </div>
               <div className='box w-48 flex items-center justify-center'>Joining Process</div>
-              <div className='box flex items-center px-20 justify-center'>
+              <div className='box flex text-lg items-center px-20 justify-center'>
                 I want to work part-time, is that possible
               </div>
             </div>
             <div className='flex rect  border-b-2 border-gray-300/50 w-full h-24 '>
               <div className='box w-48 flex items-center justify-center'></div>
               <div className='box w-48 flex items-center justify-center'></div>
-              <div className='box flex items-center px-20 justify-center'>
+              <div className='box flex items-center text-lg px-20 justify-center'>
                 How long are the average projects?
               </div>
             </div>
             <div className='flex rect  border-b-2 bg-gray-300/50 w-full h-24 '>
               <div className='box w-48 flex items-center justify-center'></div>
               <div className='box w-48 flex items-center justify-center'></div>
-              <div className='box flex items-center px-20 justify-center'>
+              <div className='box flex items-center text-lg px-20 justify-center'>
                 How does the payment works?
               </div>
             </div>
             <div className='flex rect  border-b-2 border-gray-300/50 w-full h-24 '>
               <div className='box w-48 flex items-center justify-center'></div>
               <div className='box w-48 flex items-center justify-center'></div>
-              <div className='box flex items-center px-20 justify-center'>
+              <div className='box flex items-center text-lg px-20 justify-center'>
                 How long are the average projects?
               </div>
             </div>
@@ -621,92 +622,7 @@ const Layout = () => {
         </div>
       </section>
 
-      <footer>
-        <div className='footer bg-black/90 flex flex-col gap-20 px-20 pt-40'>
-          <div className='top'>
-            <div className='box_slant h-[500px] w-full flex items-center justify-center  bg-[#525AA0]'>
-              <h1 className='text-white text-5xl font-bold w-[520px] text-center'>
-                Need a job done, and done well? Get started
-              </h1>
-            </div>
-          </div>
-          <div className='bottom flex gap-10'>
-            <div className='left w-[400px] flex flex-col gap-10'>
-              <div className='logo'>
-                <img src={Companylogo} alt='Swilt' className='w-[30%]' />
-              </div>
-              <p className='text-sm text-gray-100 w-[260px]'>
-                We take complex hiring processes - and simplify them. Connecting you to the
-                world&apos;s highly qualified talent pool.
-              </p>
-              <p className='uppercase text-gray-300/70 text-sm'>Links and redirect</p>
-              <div className='action flex items-center gap-2'>
-                <button className=' bg-gray-300/10 px-10 rounded-2xl py-2 text-white text-sm'>
-                  Hire now
-                </button>
-                <button className=' bg-gray-300/10 px-10 rounded-2xl py-2 text-white text-sm'>
-                  Apply Now
-                </button>
-              </div>
-            </div>
-            <div className='right flex flex-col gap-10'>
-              <div className='top'>
-                <div className='text-5xl font-semibold text-white'>
-                  Connecting the right people to the right businesses.
-                </div>
-              </div>
-              <div className='bottom text-sm flex flex-row gap-5'>
-                <div className='lists flex-1 flex flex-col gap-4'>
-                  <div className='top'>
-                    <div className='header text-xs uppercase text-gray-400'>Platform</div>
-                  </div>
-                  <div className='bottom text-sm text-gray-300/50 flex flex-col gap-2'>
-                    <div className='text-gray-100'>Find Work</div>
-                    <div>Find Talent</div>
-                    <div>Articles</div>
-                    <div>About Us</div>
-                  </div>
-                </div>
-                <div className='lists flex-1 flex flex-col gap-4'>
-                  <div className='top'>
-                    <div className='header text-xs uppercase text-gray-400'>Platform</div>
-                  </div>
-                  <div className='bottom text-sm text-gray-300/50 flex flex-col gap-2'>
-                    <div>Data Science</div>
-                    <div>It & Networking</div>
-                    <div>Web and Mobile</div>
-                  </div>
-                </div>
-                <div className='lists flex-1 flex flex-col gap-4'>
-                  <div className='top'>
-                    <div className='header text-xs uppercase text-gray-400'>Help</div>
-                  </div>
-                  <div className='bottom text-sm text-gray-300/50 flex flex-col gap-2'>
-                    <div>Contact Us</div>
-                  </div>
-                </div>
-                <div className='lists flex-1 flex flex-col gap-4'>
-                  <div className='top'>
-                    <div className='header text-xs uppercase text-gray-400'>Get in touch@</div>
-                  </div>
-                  <div className='bottom text-sm text-gray-300/50 flex flex-col gap-2'>
-                    <div>Instagram</div>
-                    <div>Linkedin</div>
-                    <div>Twitter</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='end border-t-2 text-sm border-gray-300/50 py-3 flex items-center justify-between'>
-            <p className='uppercase text-sm text-gray-100'>all rights reserved</p>
-            <div className='others flex items-center gap-5'>
-              <p className='decoration-white decoration-slice'>Privacy Policy</p>
-              <p>Terms and Condition</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <FooterPage />
     </div>
   );
 };
