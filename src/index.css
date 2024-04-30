@@ -123,7 +123,7 @@ button {
 .one_step {
   background: #edefff;
   clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
-  margin-top: -35px;
+  margin-top: 50px;
 
   .right-box {
     width: calc(100% - 26rem);
