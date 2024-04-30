@@ -218,3 +218,12 @@ button {
   overflow: hidden;
 }
 
+.list_item li {
+  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  color:#213547
+}
+
+.list_item li:hover {
+  color: black;
+  
+}
