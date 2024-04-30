@@ -17,13 +17,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -90,7 +84,10 @@ button {
   background: #cccccc18;
   height: 100%;
   margin-top: 55px;
+  margin-right: 0px;
+ 
 }
+
 
 .art_img {
   width: 100%;
@@ -148,9 +145,11 @@ button {
 .why_choose {
   clip-path: polygon(0 8%, 100% 0, 100% 84%, 0 100%);
   min-height: 105vh;
+  width: 100%;
   display: flex;
   align-items: center;
   margin-top: -255px;
+  margin-left: 0px;
 
   background: linear-gradient(
     to top,
@@ -163,6 +162,7 @@ button {
 .faq_cont {
   clip-path: polygon(0 8%, 100% 0, 100% 84%, 0 100%);
   margin-top: -185px;
+  margin-left: 0px;
 }
 .footer {
   clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
@@ -189,7 +189,7 @@ button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 4px solid #f00; /* Change color here */
+  border: 4px solid #f00; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,10 +220,10 @@ button {
 
 .list_item li {
   transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
-  color:#213547
+  color:gray;
 }
 
 .list_item li:hover {
   color: black;
-  
+  font-weight: 500;
 }
