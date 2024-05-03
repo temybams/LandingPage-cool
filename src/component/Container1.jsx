@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Avatar from "../imgs/zwilt-tba-1-01 2.png";
 import Iconbtn2 from "../imgs/Vector (9).png";
 
-
 function ContainerPage() {
     const [inputValue, setInputValue] = useState('');
 
@@ -13,9 +12,9 @@ function ContainerPage() {
     return (
         <div>
             <div className="flex items-center justify-center gap-0.5em">
-                <div className="flex items-center justify-center flex-col text-4xl w-1/2 px-9">
-                    <h1
-                        className=" font-bold text-5xl  flex items-center text-center justify-center text-black "
+                <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+                    <p
+                        className="font-bold text-5xl flex items-center justify-center text-center text-black sm:text-xl md:text-4xl lg:text-6xl"
                         style={{
                             marginTop: "2em",
                             width: "100%",
@@ -30,11 +29,13 @@ function ContainerPage() {
                             src={Avatar}
                             alt="avatars"
                         />
-                        has
-                    </h1>
-                    <h1 className="font-bold text-5xl text-center text-black">never been easier</h1>
+                        <span>has</span>
+                    
+                    </p>
+                    <p className="font-bold text-5xl text-center text-black sm:text-4xl md:text-5xl lg:text-6xl">never been easier</p>
+
                     <div className="small mt-6 text-black/80">
-                        <p className="text-xl text-center mt-6">
+                        <p className="text-xl text-center mt-6 sm:text-lg md:text-xl lg:text-2xl">
                             With our rigorous pre-vetting process, you'll never have to{" "}
                             <br /> worry about finding the ideal candidate ever again
                         </p>

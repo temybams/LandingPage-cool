@@ -1,21 +1,10 @@
-import Nav from "../component/Nav";
 import Carousel from "../component/Carousel";
-import Companylogo from "../imgs/Group 626553.png";
+
 import NavHeader from "../component/Header";
-import Avatar from "../imgs/zwilt-tba-1-01 2.png";
+
 import Avatar1 from "../imgs/image 6.png";
 import Avatar2 from "../imgs/portrait-charming-attractive-young-african-american-female-with-voluminous-afro-haircut-with-broad-confident-smile-keeping-her-arms-folded-chest-wearing-striped-nightgown 1.png";
-import Card1 from "../imgs/Group 1094.png";
-import Card2 from "../imgs/Group 626351.png";
-import Card3 from "../imgs/Group 626358.png";
 
-import Card4 from "../imgs/Group 626340.png";
-import Card5 from "../imgs/Group 626552(1).png";
-import Card6 from "../imgs/Group 626552.png";
-
-import Num1 from "../imgs/1.png";
-import Num2 from "../imgs/2.png";
-import Num3 from "../imgs/3.png";
 import Iconbtnn from "../imgs/Frame 626653.png";
 import Iconbtnn2 from "../imgs/Frame 626624.png";
 import Iconbtn from "../imgs/Vector.png";
@@ -26,263 +15,40 @@ import Iconn from "../imgs/Frame 626623.png";
 import Groove from "../imgs/Frame 626655.png";
 import Group from "../imgs/Groupp.png";
 import Cardhero from "../component/Cardhero";
-import Pic1 from "../imgs/pexels-christina-morillo-1181424-removebg-preview 1.png";
-import Pic2 from "../imgs/pexels-puwadon-sangngern-13419240-removebg-preview 1.png";
-import Pic3 from "../imgs/image 244.png";
-import Pic4 from "../imgs/image 246.png";
-import Pic5 from "../imgs/image 248.png";
 
-import Pic6 from "../imgs/image 249 (1).png";
-import Pic7 from "../imgs/image 249.png";
-import Pic8 from "../imgs/image 250.png";
-import Pic9 from "../imgs/image 251.png";
-import Pic10 from "../imgs/image 247.png";
 import FooterPage from "../component/Footer";
 import ContainerPage from "../component/Container1";
 import FAQSection from "../component/FAQSection";
+import { items1, items2,items3, items4 } from "../Data";
+import ArtImg from "../component/ColoredLines";
+import ExploreSection from "../component/Explore";
+
 const LayoutPage = () => {
-  const items1 = [
-    {
-      name: "shopify developer",
-      image: Pic1,
-    },
-    {
-      name: "magento Developer",
-      image: Pic2,
-    },
-    {
-      name: "Data  Scientist",
-      image: Pic3,
-    },
-    {
-      name: "webflow Developer",
-      image: Pic10,
-    },
-    {
-      name: "dot net Developer",
-      image: Pic4,
-    },
-  ];
-
-  const items2 = [
-    {
-      name: "UX Designer",
-      image: Pic5,
-    },
-    {
-      name: "Graphics Designer",
-      image: Pic6,
-    },
-    {
-      name: "Illustration Artist",
-      image: Pic7,
-    },
-    {
-      name: "Unreal Engine",
-      image: Pic8,
-    },
-    {
-      name: "Cinema 4D",
-      image: Pic9,
-    },
-  ];
-
-  const items3 = [
-    {
-      title: "Find your next star performer.",
-      context:
-        "Explore the vast Zwilt marketplace to find the candidate that meets your needs.",
-      image: Card1,
-      image2: Num1,
-      color: "#cccccc34",
-    },
-    {
-      title: "Evaluate to your heart’s content.",
-      context:
-        "Assess the candidate through work history, transparent tests and video interviews.",
-      image: Card2,
-      image2: Num2,
-      color: "#FDDD8B",
-    },
-    {
-      title: "Start building your team.",
-      context:
-        "Assess the candidate through work history, transparent tests and video interviews.",
-      image: Card3,
-      image2: Num3,
-      color: "#cccccc34",
-    },
-  ];
-
-  const items4 = [
-    {
-      title: "Onboard without the risk",
-      context1: "We pick the best for you to select.",
-      context2: "Thousands of vetted candidates in dozens of categories.",
-      context3: "Risk-free resource swapping for the best fit..",
-      image: Card4,
-      color: "#50589F",
-    },
-    {
-      title: "An open book.",
-      context1: " Easy and transparent one-to-one chat with candidates.",
-      context2: "Simple and convenient payment methods.",
-      context3: "Review past ratings.",
-      image: Card5,
-      color: "#FDDD8B",
-    },
-    {
-      title: "Stay in the loop.",
-      context1:
-        " Track your staff activity down to every minute with screenshots.",
-      context2: "Comprehensive timesheet data to process payments.",
-      context3:
-        "Create projects to organize and assign tasks more effectively.",
-      image: Card6,
-      color: "#50589F",
-    },
-  ];
-
+  
   return (
     <div className="bg-white/50">
       <section>
         <NavHeader />
 
         <ContainerPage />
-        <div className="hero_article">
+        <div >
           <Cardhero />
         </div>
       </section>
 
-      <div className='art_img mt-20'>
-        <div className='rectangle'></div>
-        <div className='rectangle'></div>
-        <div className='rectangle'></div>
-        <div className='rectangle'></div>
-        <div className='rectangle'></div>
-      </div>
+     <ArtImg/>
+     <ExploreSection/>
+
 
       <section>
-        <div className="one_step  p-20">
-          <div className="one_step-top text-center text-6xl text-black m-20 p-20">
-            Your one-stop marketplace for finding the talent your business
-            needs.
-          </div>
 
-          <div className="one_step-bottom text-black gap-10 flex px-20 pb-20 flex-col justify-center">
-            <div className="flex flex-wrap gap-5 items-center justify-center">
-              <div className="article w-96 flex flex-col gap-4">
-                <div className="text-2xl font-semibold ">
-                  Find Dev and IT professionals to scale your business.
-                </div>
-                <div className="icon_x_text grid grid-cols-2 gap-4">
-                  <div className="flex text-sm items-center gap-2">
-                    <i className="fa-solid fa-award icon-primary rotate-180"></i>
-                    989 Skils
-                  </div>
-                  <div className="flex text-sm items-center gap-2">
-                    <i className="fa-solid fa-award icon-primary rotate-180"></i>
-                    45 Sub-Categories
-                  </div>
-                  <div className="flex text-sm items-center gap-2">
-                    <i className="fa-solid fa-award icon-primary rotate-180"></i>
-                    1011 Profiles
-                  </div>
-                </div>
-              </div>
-              <div className="right-box min-w-96 flex flex-col items-center justify-end  ">
-                <div className="box mx-20 bg-white max-w-[700px] min-w-80 p-4  rounded-2xl w-full">
-                  <p className=" text-lg">It & Development</p>
-                  <div className="item flex flex-wrap gap-4 mt-2 p-2">
-                    {items1.map((item) => (
-                      <div
-                        className="item_box w-[100px] flex flex-col items-center justify-center gap-2"
-                        key={item.name}
-                      >
-                        <div className="img_cont flex items-center justify-center w-20 h-20 bg-gray-200 rounded-full">
-                          <img src={item.image} alt="" />
-                        </div>
-                        <div className="article w-[70px] font-semibold capitalize text-center">
-                          {item.name}
-                        </div>
-                      </div>
-                    ))}
-                    <button className="item-button w-[70px] h-[70px] flex items-center justify-center rounded-2xl bg-gray-200">
-                      <img src={Iconbtn} alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-8 items-center  justify-center">
-              <div className="article w-96  flex flex-col gap-4">
-                <div className="text-2xl font-semibold ">
-                  Explore Creative individuals with a Keen eye for details
-                </div>
-                <div className="icon_x_text grid grid-cols-2 gap-4">
-                  <div className="flex text-sm items-center gap-2">
-                    <i className="fa-solid fa-award icon-primary rotate-180"></i>
-                    989 Skils
-                  </div>
-                  <div className="flex text-sm items-center gap-2">
-                    <i className="fa-solid fa-award icon-primary rotate-180"></i>
-                    1011 Sub-Categories
-                  </div>
-                  <div className="flex text-sm items-center gap-2">
-                    <i className="fa-solid fa-award icon-primary rotate-180"></i>
-                    1011 Profiles
-                  </div>
-                </div>
-              </div>
-              <div className="right-box flex flex-col items-center justify-end  ">
-                <div className="box mx-20 bg-white max-w-[700px] min-w-80 p-4  rounded-2xl w-full ">
-                  <p className=" text-lg">Design & Creative</p>
-                  <div className="item flex flex-wrap gap-4 mt-2 p-2">
-                    <button className="item-button rotate-180 w-[70px] ml-5 h-[70px] flex items-center justify-center rounded-2xl bg-gray-200">
-                      <img src={Iconbtn} alt="" />
-                    </button>
-                    {items2.map((item) => (
-                      <div
-                        className="item_box w-[100px] flex flex-col items-center justify-center gap-2"
-                        key={item.name}
-                      >
-                        <div className="img_cont flex items-center justify-center w-20 h-20 bg-gray-200 rounded-full">
-                          <img src={item.image} alt="" />
-                        </div>
-                        <div className="article w-[70px] font-semibold capitalize text-center">
-                          {item.name}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-wrap items-center">
-              <div className="article w-96 flex items-center gap-4">
-                <button className="item-button w-[70px]  h-[70px] flex items-center justify-center rounded-2xl bg-black">
-                  <img src={Iconbtn2} alt="" />
-                </button>
-                <p className="text-black font-semibold text-xl">Explore More</p>
-              </div>
-              <div className="right-box flex items-center justify-end ">
-                <div className="box mx-20 max-w-[700px] p-4 rounded-xl w-full text-xl">
-                  <span className="font-semibold">30 More</span> to explore
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="howit_worked p-20  flex flex-row flex-wrap">
+        <div className="howit_worked p-20 ">
           <div className="left flex-1 text-white h-48 flex flex-col gap-5">
             <h1 className=" text-white font-bold gap-4 text-6xl h-48 flex flex-col items-start justify-start text-left">
               How it worked
-              <div className="flex flex-row">
+              <div className="flex flex-row flex-wrap">
                 for jason
-                <div className="hero_person_img bg-green flex mx-2 items-center overflow-hidden justify-center w-14 h-14 rounded-full">
+                <div className=" flex mx-2 items-center overflow-hidden justify-center w-14 h-14 rounded-full">
                   <img src={Avatar1} alt="" />
                 </div>
                 at
@@ -333,6 +99,8 @@ const LayoutPage = () => {
           </div>
         </div>
       </section>
+
+   
 
       <section>
         <div className=" flex p-20 gap-20">

@@ -1,4 +1,4 @@
-import LayoutPage from "./layout/Layout.jsx";
+import LayoutPage from "./layout/Layout";
 
 const App = () => {
   return (

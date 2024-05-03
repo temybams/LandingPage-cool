@@ -17,8 +17,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -32,11 +30,6 @@
   }
 }
 
-.nav {
-  background: #fff;
-  width: 100%;
-  height: 100px;
-}
 .hero_content {
   width: 100%;
   height: 250px;
@@ -85,42 +78,19 @@ button {
   height: 100%;
   margin-top: 55px;
   margin-right: 0px;
- 
-}
-
-
-.art_img {
-  width: 100%;
-  height: 150px;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-  padding: 20px;
-
-  .rectangle {
-    width: 80%;
-    height: 8px;
-    background: linear-gradient(
-      to right,
-      transparent,
-      rgba(0, 0, 255, 0.274) 10%,
-      rgba(6, 6, 117, 0.87) 0%,
-      rgba(0, 0, 255, 0.276) 10%,
-      transparent
-    );
-    rotate: -2deg;
-    -webkit-rotate: -2deg;
-  }
 }
 
 .one_step {
   background: #edefff;
   clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
-  margin-top: 50px;
+
+  .p-20 {
+    padding: 110px;
+  }
+
+  .sm\:p-0\.5 {
+    padding: 0.5rem;
+  }
 
   .right-box {
     width: calc(100% - 26rem);
@@ -189,7 +159,7 @@ button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 4px solid #f00; 
+  border: 4px solid #f00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,10 +190,11 @@ button {
 
 .list_item li {
   transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
-  color:gray;
+  color: gray;
 }
 
 .list_item li:hover {
   color: black;
   font-weight: 500;
 }
+

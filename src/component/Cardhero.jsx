@@ -10,7 +10,7 @@ function Cardhero() {
   return (
     <div className='w-full h-full flex items-center justify-center text-black mt-7 '>
       <div className="card_container rounded-xl flex-col py-4 px-10 flex justify-center items-center w-full bg-white">
-        <div className="card_container-tab w-fit rounded-md h-10 max-h-10 bg-gray-200/90 text-black flex item-center justify-center p-14">
+        <div className=" w-fit rounded-md  lg:h-10 sm:h-20 sm:max-h-20 bg-gray-200/90 text-black flex item-center justify-center p-14">
           <button
             className={`font-base text-lg rounded-md capitalize px-5 py-2 ${activeButton === 'it' ? 'bg-green-200' : ''
               }`}
@@ -27,9 +27,9 @@ function Cardhero() {
           </button>
         </div>
 
-        <div className="content  h-full w-full flex items-center cursor-pointer justify-between py-10">
+        <div className="  h-full w-full flex items-center cursor-pointer justify-between py-10">
           <ul className="list_item flex flex-col gap-4 capitalize">
-            <li>Python developer</li>
+            <li> Python developer</li>
             <li>Shopify Developer</li>
             <li>MERN stack Developer</li>
             <li>Full Stack Developer</li>
